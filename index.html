@@ -22,16 +22,19 @@
         // Array of image file names
         var images = ['3.jpeg', 'retro ntinda.jpeg', '1.jpeg', 'retro bukoto.jpeg', '2.jpeg', 'retro cbd.jpeg', 'retro photos.jpeg', 'barclays.jpeg', 'crested towers.jpeg', 'cbu.jpeg'];
 
+        // Array to store shuffled images
+        var shuffledImages = [];
+
         // Function to shuffle a single image
         function shuffleImage(imageElement) {
-            // Get a random index from the remaining images
-            var randomIndex = Math.floor(Math.random() * images.length);
+            // If all images have been displayed, reshuffle the array
+            if (shuffledImages.length === 0) {
+                shuffledImages = [...images]; // Create a copy of the original images array
+                shuffledImages.sort(() => Math.random() - 0.5); // Shuffle the array
+            }
 
-            // Get the image file name at the random index
-            var randomImage = images[randomIndex];
-
-            // Remove the selected image from the array
-            images.splice(randomIndex, 1);
+            // Get the first image from the shuffled array
+            var randomImage = shuffledImages.shift();
 
             // Update the src attribute of the image
             imageElement.src = 'images/' + randomImage;
