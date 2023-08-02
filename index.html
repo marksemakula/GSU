@@ -17,23 +17,27 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
    </head>
-   <script>/// Array of image file names
-    var images = ['3.jpeg', 'retro ntinda.jpg', '1.jpeg', 'retro bukoto.jpeg', '2.jpeg', 'retro cbd.jpeg', 'retro photos.jpeg', 'barclays.jpeg', 'crested towers.jpeg', 'cbu.jpeg'];
-    
-    // Function to shuffle the images
-    function shuffleImages() {
-        // Shuffle the array
-        images.sort(() => Math.random() - 0.5);
-    
-        // Update the src attribute of each image with the class "shuffle-image"
-        var shuffleImages = document.getElementsByClassName('shuffle-image');
-        for (var i = 0; i < shuffleImages.length; i++) {
-            shuffleImages[i].src = 'images/' + images[i];
+   <script>
+    window.onload = function() {
+        // Array of image file names
+        var images = ['3.jpeg', 'retro ntinda.jpeg', '1.jpeg', 'retro bukoto.jpg', '2.jpeg', 'retro cbd.jpeg', 'retro photos.jpeg', 'barclays.jpeg', 'crested towers.jpeg', 'cbu.jpeg'];
+
+        // Function to shuffle the images
+        function shuffleImages() {
+            // Shuffle the array
+            images.sort(() => Math.random() - 0.5);
+
+            // Update the src attribute of each image with the class "shuffle-image"
+            var shuffleImages = document.getElementsByClassName('shuffle-image');
+            for (var i = 0; i < shuffleImages.length; i++) {
+                shuffleImages[i].src = 'images/' + images[i];
+            }
         }
-    }
-    
-    // Call the shuffleImages function to shuffle the images initially
-    shuffleImages();</script>
+
+        // Call the shuffleImages function to shuffle the images initially
+        shuffleImages();
+    };
+</script>
    <body>
       <div class="first">
         <div class="container"><h1>Geneology Services Uganda</h1>
