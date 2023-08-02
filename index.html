@@ -24,8 +24,14 @@
 
         // Function to shuffle a single image
         function shuffleImage(imageElement) {
-            // Get a random image from the array
-            var randomImage = images[Math.floor(Math.random() * images.length)];
+            // Get a random index from the remaining images
+            var randomIndex = Math.floor(Math.random() * images.length);
+
+            // Get the image file name at the random index
+            var randomImage = images[randomIndex];
+
+            // Remove the selected image from the array
+            images.splice(randomIndex, 1);
 
             // Update the src attribute of the image
             imageElement.src = 'images/' + randomImage;
