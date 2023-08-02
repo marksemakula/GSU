@@ -22,20 +22,35 @@
         // Array of image file names
         var images = ['3.jpeg', 'retro ntinda.jpeg', '1.jpeg', 'retro bukoto.jpeg', '2.jpeg', 'retro cbd.jpeg', 'retro photos.jpeg', 'barclays.jpeg', 'crested towers.jpeg', 'cbu.jpeg'];
 
-        // Function to shuffle the images
-        function shuffleImages() {
-            // Shuffle the array
-            images.sort(() => Math.random() - 0.5);
+        // Function to shuffle a single image
+        function shuffleImage(imageElement) {
+            // Get a random image from the array
+            var randomImage = images[Math.floor(Math.random() * images.length)];
 
-            // Update the src attribute of each image with the class "shuffle-image"
+            // Update the src attribute of the image
+            imageElement.src = 'images/' + randomImage;
+        }
+
+        // Function to shuffle all images
+        function shuffleImages() {
+            // Get all elements with the class "shuffle-image"
             var shuffleImages = document.getElementsByClassName('shuffle-image');
+
+            // Shuffle each image with a random delay
             for (var i = 0; i < shuffleImages.length; i++) {
-                shuffleImages[i].src = 'images/' + images[i];
+                // Generate a random delay between 1 and 10 seconds (1000 to 10000 milliseconds)
+                var randomDelay = Math.floor(Math.random() * 9000) + 1000;
+
+                // Shuffle the image after the random delay
+                setTimeout(shuffleImage, randomDelay, shuffleImages[i]);
             }
         }
 
-        // Call the shuffleImages function to shuffle the images initially
+        // Call the shuffleImages function initially
         shuffleImages();
+
+        // Shuffle the images periodically
+        setInterval(shuffleImages, 10000); // Shuffle every 10 seconds
     };
 </script>
    <body>
