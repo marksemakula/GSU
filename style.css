@@ -186,3 +186,16 @@ footer {
   color:white;
   padding: 4%;
 }
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.footer hr {
+  margin-top: 0;
+}
+
+.footer .row {
+  align-items: flex-end;
+}
