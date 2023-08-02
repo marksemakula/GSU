@@ -32,6 +32,7 @@ nav {
 .pink {
   background-color: #b62b52;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -347,4 +348,8 @@ body {
   background: white;
   border-radius: 0%;
   transform: rotate(-45deg);
+}
+
+.logo {
+  margin-bottom: 10px;
 }
