@@ -31,14 +31,35 @@ nav {
 
 .pink {
   background-color: #b62b52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 .green {
   background-color: #769d2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 .teal {
   background-color: #01a0a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 a h2 {
@@ -326,4 +347,9 @@ body {
   background: white;
   border-radius: 0%;
   transform: rotate(-45deg);
+}
+
+.logo img {
+  width: 2100px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
 }
