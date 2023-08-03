@@ -1,11 +1,7 @@
-html{
-  font-family: 'ZCOOL XiaoWei', serif !important;
-}
 .first {
   background-image: url(images/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height:700px;
   color: white;
 }
 
@@ -16,96 +12,100 @@ html{
 .first a {
   color: white !important;
 }
-.social li{
+
+.social li {
   font-size: 17px;
   display: inline-block;
-  float:right;
+  float: right;
   padding-right: 1%;
 }
 
-li a{
+li a {
   color: white !important;
 }
 
-nav{
+nav {
   margin-top: 6%;
   border-top: 1px solid white;
 }
 
 .pink {
   background-color: #b62b52;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
- .green{
-   background-color: #769d2a;
- }
+.green {
+  background-color: #769d2a;
+}
 
- .teal {
-    background-color: #01a0a6;
- }
+.teal {
+  background-color: #01a0a6;
+}
 
- a h2 {
-   color: white;
- }
+a h2 {
+  color: white;
+}
 
 a:hover {
- text-decoration: none!important;
-  }
+  text-decoration: none !important;
+}
 
-  .first .pink, .first .pic, .first .green{
-   padding-right: 0px !important;
-   padding-left: 0px!important;
-  }
+.first .pink,
+.first .pic,
+.first .green {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 
-  .green a, .pink a, .teal a{
-    padding: 6%;
-  }
+.green a,
+.pink a,
+.teal a {
+  padding: 6%;
+}
 
-  .message{
-    background-color: #222828;
-    color: #fcfdff;
-    padding: 10%;
-  }
+.message {
+  background-color: #222828;
+  color: #fcfdff;
+  padding: 10%;
+}
 
-  .message a{
-    color:black!important;
-    background-color: white;
-  }
+.message a {
+  color: black !important;
+  background-color: white;
+}
 
-  .message a{
-    text-decoration: none!important;
+.message a {
+  text-decoration: none !important;
+}
 
-  }
 .message button {
   background-color: white;
   padding: 1%;
   border-radius: 9%;
 }
 
-.what_to_do h2{
+.what_to_do h2 {
   padding: 2%;
   color: black;
 }
-.what_to_do i{
-    font-size: 40px;
-}
-.what_to_do div {
-    padding: 3%;
-    color: #222828;
+
+.what_to_do i {
+  font-size: 40px;
 }
 
-.what_to_do button,.four button{
+.what_to_do div {
+  padding: 3%;
+  color: #222828;
+}
+
+.what_to_do button,
+.four button {
   background-color: transparent;
   border-radius: 6px;
   padding: 3%;
 }
 
-.what_to_do button a{
-  color:  #222828;
+.what_to_do button a {
+  color: #222828;
   font-variant: all-petite-caps;
 }
 
@@ -114,81 +114,78 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 1000px;
-
 }
 
-.four h1{
+.four h1 {
   padding: 10%;
   color: white;
 }
 
- .four button a{
-   color: white;
-   font-variant: all-petite-caps;
-   font-size: 25px;
- }
+.four button a {
+  color: white;
+  font-variant: all-petite-caps;
+  font-size: 25px;
+}
 
- .five{
-   padding: 3%;
- }
+.five {
+  padding: 3%;
+}
 
- .five img{
-   width: 100%;
- }
+.five img {
+  width: 100%;
+}
 
- .six {
-   background-color: #222828;
-   color:white;
- }
+.six {
+  background-color: #222828;
+  color: white;
+}
 
-.six i{
+.six i {
   font-size: 40px;
   text-align: center;
   padding: 5%;
 }
 
-.six p{
+.six p {
   padding: 0 30% 0 30%;
 }
 
-.people{
+.people {
   border-top: 1px solid white;
 }
 
-.people img{
+.people img {
   padding: 6%;
   width: 100%;
   height: 300px;
 }
 
-.letter{
+.letter {
   background-image: url(images/letter.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
   color: white;
-
 }
 
-.letter button a{
+.letter button a {
   color: black;
 }
 
-.letter h1{
+.letter h1 {
   padding-top: 4%;
 }
 
 .letter button {
   background-color: white;
-font-size: 20px;
-border-radius: 5px;
-font-variant-caps: all-petite-caps;
+  font-size: 20px;
+  border-radius: 5px;
+  font-variant-caps: all-petite-caps;
 }
 
 footer {
   background-color: black;
-  color:white;
+  color: white;
   padding: 4%;
 }
 
@@ -209,54 +206,58 @@ footer {
 body {
   background: #363636;
 }
+
 .event__search__floater {
   position: fixed;
   top: 50px;
-/*   left:0; */
   right: 50px;
   transition: all ease-in-out 0.2s;
   transform: translate(-50%, -50%);
 }
 
-.search__anchor{
+.search__anchor {
   position: relative;
-  width:auto;
+  width: auto;
   height: auto;
-/*   TODO: Center anchor */
 }
+
 .search__submit {
- opacity:0;
+  opacity: 0;
   width: 0px;
 }
+
 .search__bar {
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  outline:none;
-  border:none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  border: none;
   background: #fff;
   width: 50px;
-  height:50px;
+  height: 50px;
   border-radius: 25px;
   opacity: 0;
-  z-index:5;
+  z-index: 5;
   transition: all 0.2;
   font-size: 1em;
 }
-.search__bar:hover{
+
+.search__bar:hover {
   cursor: pointer;
 }
+
 .search__bar:focus {
   width: 200px;
-  left:auto;
+  left: auto;
   opacity: 1;
   cursor: text;
   transition: all 0.2;
   padding-left: 25px;
   padding-right: 70px;
 }
+
 .search__toggler {
   position: absolute;
   width: 60px;
@@ -268,16 +269,18 @@ body {
   border-radius: 50%;
   transition: all 0.2s;
 }
-.search__toggler:hover{
+
+.search__toggler:hover {
   cursor: pointer;
 }
+
 .search__toggler::before {
   content: "";
   position: absolute;
   margin: auto;
   top: 22px;
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   left: 22px;
   width: 12px;
   height: 2px;
@@ -285,31 +288,35 @@ body {
   transform: rotate(45deg);
   transition: all 0.2s;
 }
+
 .search__toggler::after {
   content: "";
   position: absolute;
   margin: auto;
-  top:-5px;
-  right:0;
-  bottom:0;
+  top: -5px;
+  right: 0;
+  bottom: 0;
   left: -5px;
-  width:25px;
+  width: 25px;
   height: 25px;
   border-radius: 50%;
   border: 2px solid #fff;
   transition: all 0.2s;
 }
+
 .search__bar:focus ~ .search__toggler {
   right: 400px;
   background: #151515;
   z-index: 6;
   transition: all 0.2;
 }
-.search__bar:focus ~ .search__toggler::before{
+
+.search__bar:focus ~ .search__toggler::before {
   top: 0;
   left: 0;
   width: 25px;
 }
+
 .search__bar:focus ~ .search__toggler::after {
   top: 0;
   left: 0;
@@ -319,9 +326,4 @@ body {
   background: white;
   border-radius: 0%;
   transform: rotate(-45deg);
-}
-
-.logo img {
-  width: 210px; /* Adjust the width as needed */
-  height: auto; /* Maintain the aspect ratio */
 }
