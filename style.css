@@ -372,3 +372,17 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+/* For screens smaller than 576px (e.g., mobile devices) */
+@media (max-width: 575.98px) {
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/* For screens larger than 576px (e.g., tablets and desktops) */
+@media (min-width: 576px) {
+  .col-md-4 {
+    width: 33.33%;
+  }
+}
